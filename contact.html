@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Make It Charm</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Make It Charm</a>
+
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="packages.html">Packages</a></li>
+          <li><a class="nav-link" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section page-bg">
+    <div class="container">
+      <h1>Book / Inquire</h1>
+      <p class="subtext">Send details and we’ll get back to you.</p>
+
+      <form class="form-card" action="#" method="post">
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div class="field">
+            <label for="eventDate">Event date</label>
+            <input id="eventDate" name="eventDate" type="date" />
+          </div>
+
+          <div class="field">
+            <label for="package">Preferred package</label>
+            <select id="package" name="package">
+              <option value="">Select one</option>
+              <option value="party">Full Party Setup</option>
+              <option value="dropoff">Charm Drop-Off</option>
+              <option value="studio">In-Studio Workshop</option>
+            </select>
+          </div>
+
+          <div class="field field-full">
+            <label for="message">Tell us about your event</label>
+            <textarea id="message" name="message" rows="5"
+              placeholder="Guest count, location, vibe, anything important…"></textarea>
+          </div>
+        </div>
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Make It Charm</p>
+      <p><a class="footer-link" href="packages.html">Packages</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

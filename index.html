@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Make It Charm | Pop-up Charm Experience</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Make It Charm</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+          <li><a class="nav-link" href="packages.html">Packages</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-centered">
+        <div class="container hero-content">
+
+            <h1 class="hero-title">Make It Charm</h1>
+
+            <h2 class="hero-subtitle">
+            Your Custom Charm Experience
+            </h2>
+
+            <p class="hero-description">
+            Create your own custom charms with our hands-on bedazzling experience.
+            Perfect for birthday parties, private events, and creative workshops.
+            </p>
+
+            <a class="btn hero-cta" href="packages.html">
+            See Packages
+            </a>
+
+        </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <h2>How it works</h2>
+
+        <!-- AI-assisted: Used ChatGPT to help with this semantic “steps” structure -->
+        <div class="steps">
+          <article class="step-card">
+            <h3>1) Choose a package</h3>
+            <p>Pick the setup that fits your guest count, timing, and vibe.</p>
+          </article>
+
+          <article class="step-card">
+            <h3>2) We pop up + set up</h3>
+            <p>We bring supplies, tools, and guidance—easy for hosts.</p>
+          </article>
+
+          <article class="step-card">
+            <h3>3) Create + take home</h3>
+            <p>Guests design their pieces and leave with their charms.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Popular packages</h2>
+        <p class="subtext">Quick compare, then click Packages for full details.</p>
+
+        <div class="card-row">
+          <article class="price-card">
+            <h3>Full Party Setup</h3>
+            <p class="price-note">Best for birthdays</p>
+            <ul class="list">
+              <li>On-site setup</li>
+              <li>Guided activity</li>
+              <li>Great for groups</li>
+            </ul>
+            <a class="btn btn-small" href="packages.html">View details</a>
+          </article>
+
+          <article class="price-card">
+            <h3>Charm Drop-Off</h3>
+            <p class="price-note">Low effort for hosts</p>
+            <ul class="list">
+              <li>Supplies delivered</li>
+              <li>Simple instructions</li>
+              <li>DIY-friendly</li>
+            </ul>
+            <a class="btn btn-small" href="packages.html">View details</a>
+          </article>
+
+          <article class="price-card">
+            <h3>In-Studio Workshop</h3>
+            <p class="price-note">Small + cozy</p>
+            <ul class="list">
+              <li>Hosted session</li>
+              <li>Focused learning</li>
+              <li>Perfect for friends</li>
+            </ul>
+            <a class="btn btn-small" href="packages.html">View details</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Make It Charm</p>
+      <p><a class="footer-link" href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
