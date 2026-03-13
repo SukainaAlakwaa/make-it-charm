@@ -1,126 +1,172 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Make It Charm | Pop-up Charm Experience</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Make It Charm</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html">Make It Charm</a>
+  <body class="page-bg">
+    <header class="site-header">
+      <div class="container header-inner">
+          <a class="logo-wrap" href="index.html" aria-label="Make It Charm home">
+            <img src="images/charmnobg.png" alt="Make It Charm logo" class="logo-img" />
+          </a>
+          <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-      <nav class="site-nav" aria-label="Primary navigation">
-        <ul class="nav-list">
-          <li><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
-          <li><a class="nav-link" href="packages.html">Packages</a></li>
-          <li><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+          <nav class="site-nav" aria-label="Primary navigation">
+            <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">🏠</a></li>
+            <li><a class="nav-link" href="index.html#packages">🛍️</a></li>
+            <li><a class="nav-link" href="contact.html">📞</a></li>
+         <li><a class="nav-link" href="https://instagram.com/makeitcharmx" target="_blank">📸</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    <section class="hero hero-centered">
+    <main>
+      <section class="hero hero-centered">
         <div class="container hero-content">
 
-            <h1 class="hero-title">Make It Charm</h1>
+          <h1 class="hero-title script-title">Make It Charm</h1>
 
-            <h2 class="hero-subtitle">
-            Your Custom Charm Experience
-            </h2>
+          <p class="hero-description hero-lead">
+            Host a charm night with your favourite people
+          </p>
 
-            <p class="hero-description">
-            Create your own custom charms with our hands-on bedazzling experience.
-            Perfect for birthday parties, private events, and creative workshops.
-            </p>
+          <p class="hero-description hero-description-secondary">
+            Perfect for birthdays, events, girls’ nights, and small gatherings.
+          </p>
 
-            <a class="btn hero-cta" href="packages.html">
-            See Packages
-            </a>
-
+          <div class="hero-actions">
+            <a class="btn hero-cta" href="#packages">Book You Package</a>
+          </div>
         </div>
-    </section>
+      </section>
 
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">How it works</h2>
 
+          <div class="steps">
+            <article class="step-card">
+              <p class="step-number">01</p>
+              <img src="images/01.jpeg" alt="choosing" class="choosing-image" />
+              <h3>Choose your package</h3>
+              <p>
+                Pick the party style that fits your gathering: bag charms,
+                bracelets, or necklaces.
+              </p>
+            </article>
+
+            <article class="step-card">
+              <p class="step-number">02</p>
+              <img src="images/02.jpeg" alt="setup" class="setup-image" />
+              <h3>We bring the setup</h3>
+              <p>
+                We bring the materials, tools, instruction cards, and host
+                guidance for the activity.
+              </p>
+            </article>
+
+            <article class="step-card">
+              <p class="step-number">03</p>
+              <img src="images/03.JPG" alt="creating" class="creating-image" />
+              <h3>Create + take home</h3>
+              <p>
+                Guests make their own custom pieces and leave with something cute
+                they designed themselves.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div id="packages" class="container">
+          <h2 class="section-title">Charm Party Packages</h2>
+          <p class="subtext">
+            Choose your favourite charm party!
+          </p>
+
+          <div class="card-row">
+            <article class="price-card">
+              <p class="package-mini-tag">Most playful</p>
+              <img src="images/CrossChain.JPG" alt="Cross chain bag charm style" class="chain-image" />
+              <h3>👜 Bag Charm Party</h3>
+              <p class="package-price">$115</p>
+              <ul class="list">
+                <li>4 custom bag charms</li>
+                <li>Up to 5 charms per person</li>
+                <li>Cross chain or drop chain style</li>
+                <li>All materials + assembly tools</li>
+                <li>Host guidance included</li>
+
+              </ul>
+              <a class="btn btn-small" href="bagcharm.html">View details</a>
+            </article>
+
+            <article class="price-card featured-card">
+              <p class="package-mini-tag">Most popular</p>
+              <img src="images/Bracelet.JPG" alt="Bracelet Charm Image" class="bracelet-image" />
+              <h3>💅 Bracelet Party</h3>
+              <p class="package-price">$110</p>
+              <ul class="list">
+                <li>4 custom adjustable bracelets</li>
+                <li>Up to 5 charms per person</li>
+                <li>16cm chains + extenders included</li>
+                <li>Host guidance included</li>
+                <li>All tools + instruction cards</li>
+              </ul>
+              <a class="btn btn-small" href="contact.html">Select this package</a>
+            </article>
+
+            <article class="price-card">
+              <p class="package-mini-tag">Cute + elevated</p>
+              <img src="images/Necklace.JPG" alt="Necklace Charm Image" class="necklace-image" />
+              <h3>🎀 Necklace Party</h3>
+              <p class="package-price">$120</p>
+              <ul class="list">
+                <li>4 custom adjustable necklaces</li>
+                <li>Up to 5 charms per person</li>
+                <li>45cm chains + extenders included</li>
+                <li>All tools + instruction cards</li>
+                <li>Host guidance included</li>
+              </ul>
+              <a class="btn btn-small" href="contact.html">Select this package</a>
+            </article>
+          </div>
+
+          <div class="booking-note">
+            <p><strong>Additional guests:</strong> up to 8 total, +$25 per person</p>
+            <p><strong>Please note:</strong> a clear table space is needed for setup. Tables and furniture are not provided.</p>
+            <p><strong>Currently serving:</strong> Ottawa</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <section class="section">
       <div class="container">
-        <h2>How it works</h2>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="subtext">Everything you need to know before booking ✨</p>
 
-        <!-- AI-assisted: Used ChatGPT to help with this semantic “steps” structure -->
-        <div class="steps">
-          <article class="step-card">
-            <h3>1) Choose a package</h3>
-            <p>Pick the setup that fits your guest count, timing, and vibe.</p>
-          </article>
-
-          <article class="step-card">
-            <h3>2) We pop up + set up</h3>
-            <p>We bring supplies, tools, and guidance—easy for hosts.</p>
-          </article>
-
-          <article class="step-card">
-            <h3>3) Create + take home</h3>
-            <p>Guests design their pieces and leave with their charms.</p>
-          </article>
-        </div>
+        <div id="faq-list" class="faq-list"></div>
       </div>
     </section>
-
-    <section class="section section-alt">
-      <div class="container">
-        <h2>Popular packages</h2>
-        <p class="subtext">Quick compare, then click Packages for full details.</p>
-
-        <div class="card-row">
-          <article class="price-card">
-            <h3>Full Party Setup</h3>
-            <p class="price-note">Best for birthdays</p>
-            <ul class="list">
-              <li>On-site setup</li>
-              <li>Guided activity</li>
-              <li>Great for groups</li>
-            </ul>
-            <a class="btn btn-small" href="packages.html">View details</a>
-          </article>
-
-          <article class="price-card">
-            <h3>Charm Drop-Off</h3>
-            <p class="price-note">Low effort for hosts</p>
-            <ul class="list">
-              <li>Supplies delivered</li>
-              <li>Simple instructions</li>
-              <li>DIY-friendly</li>
-            </ul>
-            <a class="btn btn-small" href="packages.html">View details</a>
-          </article>
-
-          <article class="price-card">
-            <h3>In-Studio Workshop</h3>
-            <p class="price-note">Small + cozy</p>
-            <ul class="list">
-              <li>Hosted session</li>
-              <li>Focused learning</li>
-              <li>Perfect for friends</li>
-            </ul>
-            <a class="btn btn-small" href="packages.html">View details</a>
-          </article>
-        </div>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Make It Charm</p>
+        <p><a class="footer-link" href="contact.html">Contact</a></p>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Make It Charm</p>
-      <p><a class="footer-link" href="contact.html">Contact</a></p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
+    <script src="script.js"></script>
+   <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+  </body>
 </html>

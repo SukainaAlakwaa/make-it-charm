@@ -1,71 +1,98 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact | Make It Charm</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Make It Charm</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html">Make It Charm</a>
+  <body class="page-bg">
+    <header class="site-header">
+      <div class="container header-inner">
+          <a class="logo-wrap" href="index.html" aria-label="Make It Charm home">
+              <img src="images/charmnobg.png" alt="Make It Charm logo" class="logo-img" />
+          </a>
+          <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="site-nav" aria-label="Primary navigation">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="index.html">🏠</a></li>
+                <li><a class="nav-link" href="index.html#packages">🛍️</a></li>
+                <li><a class="nav-link" href="contact.html">📞</a></li>
+                <li><a class="nav-link" href="https://instagram.com/makeitcharmx" target="_blank">📸</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
 
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="form-card">
+            <h1 class="section-title">Book / Inquire</h1>
+            <p class="subtext">Send your details and we’ll get back to you.</p>
 
-      <nav class="site-nav" aria-label="Primary navigation">
-        <ul class="nav-list">
-          <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="nav-link" href="packages.html">Packages</a></li>
-          <li><a class="nav-link" href="contact.html" aria-current="page">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+            <form id="contact-form" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="full-name">Full name</label>
+                  <input type="text" id="full-name" name="full-name" required>
+                  <small class="error-message"></small>
+                </div>
 
-  <main class="section page-bg">
-    <div class="container">
-      <h1>Book / Inquire</h1>
-      <p class="subtext">Send details and we’ll get back to you.</p>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                  <small class="error-message"></small>
+                </div>
 
-      <form class="form-card" action="#" method="post">
-        <div class="form-grid">
-          <div class="field">
-            <label for="name">Full name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required />
-          </div>
+                <div class="field">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" required>
+                  <span class="error-message" id="phone-error"></span>
+                </div>
 
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required />
-          </div>
+                <div class="field">
+                  <label for="event-date">Event date</label>
+                  <input type="date" id="event-date" required>
+                  <span class="error-message" id="date-error"></span>
+                </div>
 
-          <div class="field">
-            <label for="eventDate">Event date</label>
-            <input id="eventDate" name="eventDate" type="date" />
-          </div>
+                <div class="field field-full">
+                  <label for="package">Preferred package</label>
+                  <select id="package" required>
+                    <option value="">Select one</option>
+                    <option value="Bracelet Party">Bracelet Party</option>
+                    <option value="Necklace Party">Necklace Party</option>
+                    <option value="Bag Charm Party">Bag Charm Party</option>
+                  </select>
+                  <span class="error-message" id="package-error"></span>
+                </div>
 
-          <div class="field">
-            <label for="package">Preferred package</label>
-            <select id="package" name="package">
-              <option value="">Select one</option>
-              <option value="party">Full Party Setup</option>
-              <option value="dropoff">Charm Drop-Off</option>
-              <option value="studio">In-Studio Workshop</option>
-            </select>
-          </div>
+                <div class="field field-full">
+                  <label for="event-details">Tell us about your event</label>
+                  <textarea
+                    id="event-details"
+                    name="event-details"
+                    rows="6"
+                    placeholder="Guest count, location, occation, time, anything important..."
+                    required
+                  ></textarea>
+                  <small class="error-message"></small>
+                </div>
+              </div>
 
-          <div class="field field-full">
-            <label for="message">Tell us about your event</label>
-            <textarea id="message" name="message" rows="5"
-              placeholder="Guest count, location, vibe, anything important…"></textarea>
+              <button type="submit" class="btn">Submit</button>
+              <p id="form-success" class="form-success" aria-live="polite"></p>
+            </form>
           </div>
         </div>
-
-        <button class="btn" type="submit">Submit</button>
-      </form>
-    </div>
-  </main>
+      </section>
+    </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
@@ -73,9 +100,7 @@
       <p><a class="footer-link" href="packages.html">Packages</a></p>
     </div>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
 </body>
 </html>
