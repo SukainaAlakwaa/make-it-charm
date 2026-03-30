@@ -72,8 +72,8 @@ function renderFaqItems() {
       answer: "Each package includes charms, chains, tools, instruction cards, and guidance during the activity."
     },
     {
-      question: "Can I add extra guests?",
-      answer: "Yes. Additional guests can be added up to 10 total for an extra $22 per person."
+      question: "What materials do you use?",
+      answer: "Materials vary depending on your charm selection. We use a mix of stainless steel, titanium steel, 18K gold-plated metals, copper with zircon details, and other mixed metals such as brass and alloy. To keep your charm pieces looking their best, we recommend avoiding water, perfumes, and harsh chemicals, storing your pieces in a dry place when not in use, and handling them gently to maintain their shine. Because we use a variety of materials, slight variations and natural wear over time are normal."
     },
     {
       question: "Do you provide tables and chairs?",
