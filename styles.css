@@ -1170,17 +1170,40 @@ textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 14px;
 }
 
-.footer-link {
-  color: var(--pink-main);
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #ff69b4; /* your pink */
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
+ font-weight: 700;
 }
 
 .footer-link:hover {
   text-decoration: underline;
+}
+
+.policy-box {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  margin-top: 20px;
+}
+
+.policy-box h3 {
+  margin-top: 20px;
+
+}
+
+.policy-box p {
+  margin-top: 5px;
+  line-height: 1.6;
 }
 
 /* medium screens */
@@ -1272,8 +1295,9 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 
-  .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.footer-inner {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 }

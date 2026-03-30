@@ -73,7 +73,7 @@ function renderFaqItems() {
     },
     {
       question: "Can I add extra guests?",
-      answer: "Yes. Additional guests can be added up to 8 total for an extra $25 per person."
+      answer: "Yes. Additional guests can be added up to 10 total for an extra $22 per person."
     },
     {
       question: "Do you provide tables and chairs?",
@@ -89,7 +89,7 @@ function renderFaqItems() {
     },
     {
       question: "What events are these packages good for?",
-      answer: "They are perfect for birthdays, girls’ nights, small gatherings, and other creative events."
+      answer: "They are perfect for birthdays, Grad parties, girls’ nights, small gatherings, and other creative events."
     }
   ];
 

@@ -32,75 +32,41 @@
     <main>
       <section class="section">
         <div class="container">
-          <div class="form-card">
-            <h1 class="section-title">Book / Inquire</h1>
-            <p class="subtext">Send your details and we’ll get back to you.</p>
+          <h2 class="section-title">Contact Us 💌</h2>
+          <p class="subtext">Have a question, request, or booking inquiry? We’d love to hear from you ✨</p>
 
-            <form id="contact-form" novalidate>
-              <div class="form-grid">
-                <div class="field">
-                  <label for="full-name">Full name</label>
-                  <input type="text" id="full-name" name="full-name" required>
-                  <small class="error-message"></small>
-                </div>
+          <form action="mailto:makeitcharm@gmail.com" method="POST" enctype="text/plain" class="contact-form">
 
-                <div class="field">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required>
-                  <small class="error-message"></small>
-                </div>
+            <label>Full Name <span class="required">*</span></label>
+            <input type="text" name="name" required />
 
-                <div class="field">
-                  <label for="phone">Phone Number</label>
-                  <input type="tel" id="phone" required>
-                  <span class="error-message" id="phone-error"></span>
-                </div>
+            <label>Email<span class="required">*</span></label>
+            <input type="email" name="email" required />
 
-                <div class="field">
-                  <label for="event-date">Event date</label>
-                  <input type="date" id="event-date" required>
-                  <span class="error-message" id="date-error"></span>
-                </div>
+            <label>Phone Number</label>
+            <input type="text" name="phone"  />
 
-                <div class="field field-full">
-                  <label for="package">Preferred package</label>
-                  <select id="package" required>
-                    <option value="">Select one</option>
-                    <option value="Bracelet Party">Bracelet Party</option>
-                    <option value="Necklace Party">Necklace Party</option>
-                    <option value="Bag Charm Party">Bag Charm Party</option>
-                  </select>
-                  <span class="error-message" id="package-error"></span>
-                </div>
+            <label>Send Inquiry <span class="required">*</span></label>
+            <textarea name="details" rows="4" required></textarea>
 
-                <div class="field field-full">
-                  <label for="event-details">Tell us about your event</label>
-                  <textarea
-                    id="event-details"
-                    name="event-details"
-                    rows="6"
-                    placeholder="Guest count, location, occation, time, anything important..."
-                    required
-                  ></textarea>
-                  <small class="error-message"></small>
-                </div>
-              </div>
+            <button type="submit" class="btn">Send</button>
 
-              <button type="submit" class="btn">Submit</button>
-              <p id="form-success" class="form-success" aria-live="polite"></p>
-            </form>
-          </div>
+          </form>
         </div>
-      </section>
+    </section>
     </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Make It Charm</p>
-      <p><a class="footer-link" href="packages.html">Packages</a></p>
-    </div>
-  </footer>
+
   <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
   <script src="script.js"></script>
 </body>
+<footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Make It Charm</p>
+
+        <div class="footer-links">
+          <a class="footer-link" href="terms.html">Terms & Policies</a>
+        </div>
+      </div>
+    </footer>
 </html>
